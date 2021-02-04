@@ -13,9 +13,17 @@ yarn add --save-dev enzyme jest-enzyme @wojtekmaj/enzyme-adapter-react-17
 
 and importing the below anytime the course imports enzyme-adapter-react-16
 
-import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
+import EnzymeAdapter from '@wojtekmaj/enzyme-adapter-react-17';
 
 yarn add --save-dev enzyme returns missing list of packages to add to project error
 yarn add enzyme worked 
 
 New committing command: git commit -am "New commit"
+
+/** 
+ * Functional react component for congratulatory message.
+ * @function
+ * @returns {JSX.Element} - Rendered component (or null if `success` prop is false).
+ */
+
+ these are js docs that the instructor likes to include in most files
