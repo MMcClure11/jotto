@@ -27,3 +27,6 @@ New committing command: git commit -am "New commit"
  */
 
  these are js docs that the instructor likes to include in most files
+
+ yarn add prop-types (the instructor used npm install --save prop-types but that command did not work for me with the yarn add --save)
+ yarn add check-prop-types (again using the flag --save-dev didn't work for me)
