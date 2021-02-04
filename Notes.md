@@ -1,4 +1,4 @@
-2/4/2021
+2/4/2021 (2.5 hours)
 
 npx create-react-app jotto not supported
 went to the docs and tried 
@@ -34,4 +34,11 @@ New committing command: git commit -am "New commit"
  'does not throw warning with expected props' to see test fail turn false to a string
  warning about using defaultProps in your setup, if you change them, you might get falsely passing tests so be sure to check where else in your code you need to change your props
 
- 
+ ---Summary of Abstractions---
+ findByTestAttr in test/testUtils.js
+ checkProps in test/testUtils.js
+ Did not abstract setup()
+  too different for each component
+Enzyme adapter in setupTests.js
+Caution: too many abstractions = hard-to-read tests
+  less useful in diagnosing failing tests
