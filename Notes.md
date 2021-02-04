@@ -30,3 +30,8 @@ New committing command: git commit -am "New commit"
 
  yarn add prop-types (the instructor used npm install --save prop-types but that command did not work for me with the yarn add --save)
  yarn add check-prop-types (again using the flag --save-dev didn't work for me)
+
+ 'does not throw warning with expected props' to see test fail turn false to a string
+ warning about using defaultProps in your setup, if you change them, you might get falsely passing tests so be sure to check where else in your code you need to change your props
+
+ 
