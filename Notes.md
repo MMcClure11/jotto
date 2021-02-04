@@ -18,3 +18,4 @@ import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 yarn add --save-dev enzyme returns missing list of packages to add to project error
 yarn add enzyme worked 
 
+New committing command: git commit -am "New commit"
