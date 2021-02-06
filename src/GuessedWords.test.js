@@ -38,6 +38,18 @@ describe('if there are no words guessed', () => {
   });
 });
 describe('if there are words guessed', () => {
- 
-});
+ guessedWords = [
+   { guessedWord: 'train', letterMatchCount: 3 },
+   { guessedWord: 'agile', letterMatchCount: 1 },
+   { guessedWord: 'party', letterMatchCount: 5 },
+ ];
+ test('renders without error', () => {
 
+ });
+ test('renders "guessed words" section', () => {
+
+ });
+ test('correct number of guessed words', () => {
+
+ });
+});
