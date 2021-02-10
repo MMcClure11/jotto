@@ -42,3 +42,10 @@ New committing command: git commit -am "New commit"
 Enzyme adapter in setupTests.js
 Caution: too many abstractions = hard-to-read tests
   less useful in diagnosing failing tests
+
+  2/10/2021
+  to play the game and access the random word server:
+  cd udemy-Enzyme
+  cd random-word-server
+  yarn start
+  navigate to localhost:3030
