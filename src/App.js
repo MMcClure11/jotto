@@ -18,10 +18,10 @@ export class UnconnectedApp extends Component {
   }
 
   render() {
+    console.log('The secret word is', this.props.secretWord)
     return (
       <div className="container">
         <h1>Jotto</h1>
-        <div>This secret word is: {this.props.secretWord}</div>
         <Congrats success={this.props.success} />
         <Input />
         <GuessedWords guessedWords={this.props.guessedWords} />
