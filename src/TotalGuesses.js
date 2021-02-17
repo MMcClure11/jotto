@@ -1,9 +1,9 @@
 import React from 'react'
 
-const TotalGuesses = () => {
+const TotalGuesses = (props) => {
   return(
     <h4 data-test="component-total-guesses">
-      Total Guesses: 0
+      Total Guesses: {props.guessCount}
     </h4>
   );
 };
