@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import { findByTestAttr } from '../test/testUtils'
+import { findByTestAttr, checkProps } from '../test/testUtils'
 import TotalGuesses from './TotalGuesses';
 
 const defaultProps = { guessCount: 0 };
@@ -15,4 +15,10 @@ test('renders without error', () => {
   const wrapper = setup()
   const component = findByTestAttr(wrapper, 'component-total-guesses');
   expect(component.length).toBe(1);
+});
+test('renders the number of guesses', () => {
+  const guessCount = 8;
+  const wrapper = setup({ guessCount });
+  const component = findByTestAttr(wrapper, 'component-total-guesses');
+  expect(component.text()).toContain(guessCount.toString());
 });
