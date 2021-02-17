@@ -11,6 +11,10 @@ const setup = (props={}) => {
   return shallow(<TotalGuesses {...setupProps} />)
 }
 
+test('does not throw warning with expected props', () => {
+  checkProps(TotalGuesses, defaultProps);
+});
+
 test('renders without error', () => {
   const wrapper = setup()
   const component = findByTestAttr(wrapper, 'component-total-guesses');
