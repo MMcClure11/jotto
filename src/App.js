@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import './App.css';
 
+import TotalGuesses from './TotalGuesses'
 import GuessedWords from './GuessedWords';
 import Congrats from './Congrats';
 import Input from './Input';
@@ -25,6 +26,7 @@ export class UnconnectedApp extends Component {
         <Congrats success={this.props.success} />
         <Input />
         <GuessedWords guessedWords={this.props.guessedWords} />
+        <TotalGuesses guessCount={this.props.guessedWords.length} />
       </div>
     );
   }
