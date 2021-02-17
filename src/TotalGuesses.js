@@ -2,9 +2,9 @@ import React from 'react'
 
 const TotalGuesses = () => {
   return(
-    <div>
-
-    </div>
+    <h4 data-test="component-total-guesses">
+      Total Guesses: 0
+    </h4>
   );
 };
 
