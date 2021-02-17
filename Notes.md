@@ -49,3 +49,9 @@ Caution: too many abstractions = hard-to-read tests
   cd random-word-server
   yarn start
   navigate to localhost:3030
+
+  2/17/21
+  Challenge #1: Number of Guesses
+    -Add 'guess number' column to the 'Guessed Words' table
+    -Add a component that displays the total guess
+    -Use only existing state
