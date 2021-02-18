@@ -6,6 +6,12 @@ import NewWordButton from './NewWordButton';
 
 const defaultProps = { display: false };
 
+/**
+ * Factory funtion to create a ShallowWrapper from the NewWordButton component.
+ * @function setup
+ * @param {object} props - Component props specific to this setup.
+ * @returns {ShallowWrapper} 
+ */
 const setup = (props={}) => {
   const setupProps = { ...defaultProps, ...props };
   return shallow(<NewWordButton {...setupProps } />);
@@ -18,7 +24,7 @@ describe('render', () => {
     expect(component.length).toBe(1);
   });
   test('renders no text when `display` prop is false', () => {
-    const wrapper = setup({ display: false });
+    const wrapper = setup(defaultProps);
     const component = findByTestAttr(wrapper, 'component-new-word-button');
     expect(component.text()).toBe('');
   });
@@ -28,7 +34,7 @@ describe('render', () => {
     expect(component.text().length).not.toBe(0);
   });
 });
-test('does not thow warning with expeced props', () => {
+test('does not thow warning with expected props', () => {
   const expectedProps = { display: false, resetAction: () => {} };
   checkProps(NewWordButton, expectedProps);
 });

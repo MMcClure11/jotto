@@ -61,3 +61,4 @@ Caution: too many abstractions = hard-to-read tests
     [] Display after successful guess
     [] Reset the game with a new word from the server
     [] Use connected component (tests will be very similar to input and guessedWord)
+      or unconnected component with unit tests for reducer and action
