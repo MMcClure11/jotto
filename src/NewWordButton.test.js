@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import { findByTestAttr } from '../test/testUtils';
+import { checkProps, findByTestAttr } from '../test/testUtils';
 import NewWordButton from './NewWordButton';
 
 const defaultProps = { display: false };
@@ -27,4 +27,8 @@ describe('render', () => {
     const component = findByTestAttr(wrapper, 'component-new-word-button');
     expect(component.text().length).not.toBe(0);
   });
+});
+test('does not thow warning with expeced props', () => {
+  const expectedProps = { display: false, resetAction: () => {} };
+  checkProps(NewWordButton, expectedProps);
 });
