@@ -53,5 +53,11 @@ Caution: too many abstractions = hard-to-read tests
   2/17/21
   Challenge #1: Number of Guesses
     [X]Add 'guess number' column to the 'Guessed Words' table
-    [] Add a component that displays the total guess
+    [X] Add a component that displays the total guess
     [X] Use only existing state
+  2/18/21
+  Challenge #2: Reset Game
+    [] Add a "New Word" Button
+    [] Display after successful guess
+    [] Reset the game with a new word from the server
+    [] Use connected component (tests will be very similar to input and guessedWord)
