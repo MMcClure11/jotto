@@ -22,4 +22,9 @@ describe('render', () => {
     const component = findByTestAttr(wrapper, 'component-new-word-button');
     expect(component.text()).toBe('');
   });
+  test('renders non-empty text when `display` prop is true', () => {
+    const wrapper = setup({ display: true, resetAction: () => {} });
+    const component = findByTestAttr(wrapper, 'component-new-word-button');
+    expect(component.text().length).not.toBe(0);
+  });
 });
