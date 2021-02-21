@@ -57,8 +57,8 @@ Caution: too many abstractions = hard-to-read tests
     [X] Use only existing state
   2/18/21, 2/21/21
   Challenge #2: Reset Game
-    [] Add a "New Word" Button
-    [] Display after successful guess
+    [X] Add a "New Word" Button
+    [X] Display after successful guess
     [] Reset the game with a new word from the server
-    [] Use connected component (tests will be very similar to input and guessedWord)
+    [X] Use connected component (tests will be very similar to input and guessedWord)
       or unconnected component with unit tests for reducer and action

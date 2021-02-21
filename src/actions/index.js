@@ -36,16 +36,21 @@ export const guessWord = (guessedWord) => {
   };
 };
 
-export const getSecretWord = () => {
-  return (dispatch) => {
-    return axios.get('http://localhost:3030')
-      .then(response => {
-        dispatch({
-          type: actionTypes.SET_SECRET_WORD,
-          payload: response.data
-        });
+/**
+ * Dispatch axios action to get the secret word from random server.
+ * Separate this out so it can be used in getSecretWord and resetGame.
+ * @function getSecretWordDispatch
+ * @param {dispatch} dispatch - Redux Thunk dispatch.
+ */
+
+export const getSecretWordDispatch = (dispatch) => {
+  return axios.get('http://localhost:3030')
+    .then(response => {
+      dispatch({
+        type: actionTypes.SET_SECRET_WORD,
+        payload: response.data
       });
-  };
+    });
 };
 
 /**
@@ -57,6 +62,10 @@ export const getSecretWord = () => {
  export const resetGame = () => {
    return (dispatch) => {
      dispatch({ type: actionTypes.RESET_GAME});
-     return getSecretWord()
+     return getSecretWord(dispatch)
    }
+ }
+
+ export const getSecretWord = () => {
+   return getSecretWordDispatch;
  }
