@@ -47,3 +47,16 @@ export const getSecretWord = () => {
       });
   };
 };
+
+/**
+ * Action creator to reset game and get new word.
+ * @function resetGame
+ * @returns {function} - Redux Thunk function that dispatches RESET_GAME action and calls getSecretWord().
+ */
+
+ export const resetGame = () => {
+   return (dispatch) => {
+     dispatch({ type: actionTypes.RESET_GAME});
+     return getSecretWord()
+   }
+ }
