@@ -9,7 +9,7 @@ test('returns state true upon receiving an action type of `CORRECT_GUESS`', () =
   const newState = successReducer(undefined, { type: actionTypes.CORRECT_GUESS });
   expect(newState).toBe(true);
 });
-test('returns state of false upon receiving an action of type`REST_GAME`', () => {
+test('returns state of false upon receiving an action of type`RESET_GAME`', () => {
   //start with success true, since success is false by default
   const newState = successReducer(true, { type: actionTypes.RESET_GAME });
   expect(newState).toBe(false);
