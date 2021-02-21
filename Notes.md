@@ -55,7 +55,7 @@ Caution: too many abstractions = hard-to-read tests
     [X]Add 'guess number' column to the 'Guessed Words' table
     [X] Add a component that displays the total guess
     [X] Use only existing state
-  2/18/21
+  2/18/21, 2/21/21
   Challenge #2: Reset Game
     [] Add a "New Word" Button
     [] Display after successful guess

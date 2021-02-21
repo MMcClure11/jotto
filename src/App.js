@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import './App.css';
 
-import TotalGuesses from './TotalGuesses'
+import TotalGuesses from './TotalGuesses';
+// import NewWordButton from './NewWordButton';
 import GuessedWords from './GuessedWords';
 import Congrats from './Congrats';
 import Input from './Input';
@@ -24,6 +25,7 @@ export class UnconnectedApp extends Component {
       <div className="container">
         <h1>Jotto</h1>
         <Congrats success={this.props.success} />
+        {/* <NewWordButton display={this.props.success} /> */}
         <Input />
         <GuessedWords guessedWords={this.props.guessedWords} />
         <TotalGuesses guessCount={this.props.guessedWords.length} />
