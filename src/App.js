@@ -25,18 +25,32 @@ export class UnconnectedApp extends Component {
   }
 
   render() {
+    let contents;
+
+    if (this.props.serverError) {
+      contents = (
+        <h2>Sorry, server Error</h2>
+      )
+    } else {
+      contents = (
+        <div>
+          <Congrats success={this.props.success} />
+          <NewWordButton 
+            display={this.props.success} 
+            resetAction={this.props.resetGame}
+          />
+          
+        <Input />
+        <GuessedWords guessedWords={this.props.guessedWords} />
+        <TotalGuesses guessCount={this.props.guessedWords.length} />
+        </div>
+      )
+    }
     console.log('The secret word is', this.props.secretWord)
     return (
       <div className="container">
         <h1>Jotto</h1>
-        <Congrats success={this.props.success} />
-        <NewWordButton 
-          display={this.props.success} 
-          resetAction={this.props.resetGame}
-        />
-        <Input />
-        <GuessedWords guessedWords={this.props.guessedWords} />
-        <TotalGuesses guessCount={this.props.guessedWords.length} />
+        { contents }
       </div>
     );
   }
