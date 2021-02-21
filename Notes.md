@@ -62,3 +62,6 @@ Caution: too many abstractions = hard-to-read tests
     [] Reset the game with a new word from the server
     [X] Use connected component (tests will be very similar to input and guessedWord)
       or unconnected component with unit tests for reducer and action
+      --Tested on Bonnie's solution, and it DOES work (had to monkey around with commenting out the wordnik url)
+      --require further study to determine why mine does not reset the word
+      [] clear out table of guessed words when New Word button is clicked
