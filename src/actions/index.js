@@ -1,5 +1,10 @@
 import axios from 'axios';
+
 import { getLetterMatchCount } from '../helpers';
+// import { wordnikKey } from '../config.js';
+
+// export const WORDNIK_URL = `https://api.wordnik.com/v4/words.json/randomWord?hasDictionaryDef=true&minCorpusCount=1000&minDictionaryCount=100&maxDictionaryCount=-1&minLength=5&maxLength=5&api_key=${wordnikKey}`;
+export const WORDNIK_URL = 'http://localhost:3030'
 
 export const actionTypes = {
   CORRECT_GUESS: 'CORRECT_GUESS',
@@ -61,8 +66,8 @@ export const getSecretWordDispatch = (dispatch) => {
 
  export const resetGame = () => {
    return (dispatch) => {
-     dispatch({ type: actionTypes.RESET_GAME});
-     return getSecretWord(dispatch)
+     dispatch({ type: actionTypes.RESET_GAME });
+     return getSecretWordDispatch(dispatch);
    }
  }
 

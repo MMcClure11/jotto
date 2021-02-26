@@ -55,7 +55,7 @@ Caution: too many abstractions = hard-to-read tests
     [X]Add 'guess number' column to the 'Guessed Words' table
     [X] Add a component that displays the total guess
     [X] Use only existing state
-  2/18/21, 2/21/21
+  2/18/21, 2/21/21, 2/26/21
   Challenge #2: Reset Game
     [X] Add a "New Word" Button
     [X] Display after successful guess
@@ -64,4 +64,4 @@ Caution: too many abstractions = hard-to-read tests
       or unconnected component with unit tests for reducer and action
       --Tested on Bonnie's solution, and it DOES work (had to monkey around with commenting out the wordnik url)
       --require further study to determine why mine does not reset the word
-      [] clear out table of guessed words when New Word button is clicked
+      [X] clear out table of guessed words when New Word button is clicked
