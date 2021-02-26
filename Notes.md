@@ -65,3 +65,11 @@ Caution: too many abstractions = hard-to-read tests
       --Tested on Bonnie's solution, and it DOES work (had to monkey around with commenting out the wordnik url)
       --require further study to determine why mine does not reset the word
       [X] clear out table of guessed words when New Word button is clicked
+  
+  Challenge #3: Give Up Button
+    [] Create a 'Give Up' button
+      [] only display when word has not been guessed correctly
+    [] Upon Click
+      [] show secret word
+      [] display 'better luck next time' message
+      [] display 'new word' button component 
