@@ -66,6 +66,7 @@ Caution: too many abstractions = hard-to-read tests
       --require further study to determine why mine does not reset the word
       [X] clear out table of guessed words when New Word button is clicked
   
+  2/26/21 (15 min)
   Challenge #3: Give Up Button
     [] Create a 'Give Up' button
       [] only display when word has not been guessed correctly
