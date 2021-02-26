@@ -50,16 +50,16 @@ Caution: too many abstractions = hard-to-read tests
   yarn start
   navigate to localhost:3030
 
-  2/17/21
+  2/17/21 (1 hour)
   Challenge #1: Number of Guesses
     [X]Add 'guess number' column to the 'Guessed Words' table
     [X] Add a component that displays the total guess
     [X] Use only existing state
-  2/18/21, 2/21/21, 2/26/21
+  2/18/21, 2/21/21, 2/26/21 (2 hours, 40 min)
   Challenge #2: Reset Game
     [X] Add a "New Word" Button
     [X] Display after successful guess
-    [] Reset the game with a new word from the server
+    [X] Reset the game with a new word from the server
     [X] Use connected component (tests will be very similar to input and guessedWord)
       or unconnected component with unit tests for reducer and action
       --Tested on Bonnie's solution, and it DOES work (had to monkey around with commenting out the wordnik url)
